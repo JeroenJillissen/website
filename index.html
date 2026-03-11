@@ -7,139 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&family=EB+Garamond:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --bg: #ffffff;
-      --text: #0a0a0a;
-      --muted: #cccccc;
-      --divider: #e0e0e0;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0a0a0a;
-        --text: #f0f0f0;
-        --muted: #cccccc;
-        --divider: #2a2a2a;
-      }
-    }
-
-    html, body {
-      height: 100%;
-    }
-
+    html, body { height: 100%; }
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: 'EB Garamond', Georgia, serif;
-      line-height: 1.6;
-      transition: background-color 0.2s, color 0.2s;
-      overflow-x: clip;
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
-
-    .page {
-      max-width: 728px;
-      margin: 0 auto;
-      padding: 0 24px;
-      width: 100%;
-    }
-
-    /* ── Nav ── */
-
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      gap: 24px;
-      padding: 32px 0 0;
-    }
-
-    nav a {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--muted);
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      transition: color 0.15s;
-    }
-
-    nav a:hover {
-      color: var(--text);
-    }
-
-    @media (min-width: 900px) {
-      nav {
-        position: fixed;
-        top: 40px;
-        right: 40px;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 18px;
-        padding: 0;
-        z-index: 100;
-      }
-    }
-
-    /* ── Intro ── */
-
-    .intro {
-      padding: 48px 0;
-    }
-
-    .intro h1 {
-      font-family: 'EB Garamond', Georgia, serif;
-      font-size: 36px;
-      font-weight: normal;
-      line-height: 1.15;
-      text-wrap: balance;
-      margin-bottom: 4px;
-      color: var(--text);
-    }
-
-    .intro h1:last-of-type {
-      margin-bottom: 40px;
-      color: #555555;
-      font-size: 36px;
-    }
-
-    .intro p {
-      font-size: 22px;
-      color: var(--muted);
-      line-height: 32px;
-      font-weight: 400;
-      text-align: left;
-    }
-
-    .intro p + p {
-      margin-top: 16px;
-    }
-
-    .intro a {
-      color: var(--text);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .intro a:hover { color: var(--muted); }
-    .intro a.link-relay:hover    { color: #4461FF; }
-    .intro a.link-android:hover  { color: #3DDC84; }
-    .intro a.link-gmail:hover    { color: #EA4335; }
-    .intro a.link-calendar:hover { color: #4285F4; }
-    .intro a.link-chat:hover     { color: #34A853; }
-    .intro a.link-tasks:hover    { color: #1a73e8; }
-
-    @media (max-width: 520px) {
-      .intro {
-        padding: 32px 0;
-      }
     }
   </style>
 </head>
@@ -149,6 +23,8 @@
     <nav>
       <a id="nav-email" href="#">Email</a>
       <a href="https://www.linkedin.com/in/jeroenjillissen/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/notes">Notes</a>
+      <a href="/resume">Resume</a>
     </nav>
 
     <section class="intro">
