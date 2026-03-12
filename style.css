@@ -93,8 +93,6 @@ nav a.active { color: var(--text); }
 /* ── Mobile contact footer ── */
 
 .site-footer {
-  display: flex;
-  gap: 0;
   padding: 32px 0 48px;
 }
 
