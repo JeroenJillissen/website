@@ -8,18 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&family=EB+Garamond:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    html { height: 100%; }
-    body {
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .intro { padding: 96px 0; }
-  </style>
+  <style>html { height: 100%; }</style>
 </head>
-<body>
+<body class="home">
   <div class="page">
 
     <nav>
@@ -29,7 +20,7 @@
     </nav>
 
     <section class="intro">
-      <h1><span style="color: #cccccc;">Jeroen Jillissen</span> – Design leadership at the intersection of <i>Design</i> and <i>AI</i></h1>
+      <h1><span class="h1-name">Jeroen Jillissen</span> – Design leadership at the intersection of <i>Design</i> and <i>AI</i></h1>
       <p>I'm a principal designer at <a href="https://relay.app" target="_blank" rel="noopener" class="link-relay">Relay.app</a>, where I help shape how people create and automate with AI. Our goal is to make powerful agent-based workflows accessible to anyone, without requiring technical skills.
       </p>
       <p>
@@ -46,8 +37,7 @@
     (function() {
       var u = 'jeroen';
       var d = 'jillissen.com';
-      var href = 'mailto:' + u + '@' + d;
-      document.getElementById('nav-email').href = href;
+      document.getElementById('nav-email').href = 'mailto:' + u + '@' + d;
     })();
   </script>
 </body>
