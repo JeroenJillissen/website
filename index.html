@@ -15,8 +15,12 @@
 
     <nav>
       <a href="/" class="active">About</a>
-      <a id="nav-email" href="#">Email</a>
-      <a href="https://www.linkedin.com/in/jeroenjillissen/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/notes/">Notes</a>
+      <a href="/now">Now</a>
+      <span class="nav-break"></span>
+      <a class="nav-contact" id="nav-email" href="#">Email</a>
+      <a class="nav-contact" href="https://www.linkedin.com/in/jeroenjillissen/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="nav-contact" href="https://bsky.app/profile/jillissen.com" target="_blank" rel="noopener">Bluesky</a>
     </nav>
 
     <section class="intro">
@@ -31,13 +35,21 @@
       </p>
     </section>
 
+    <footer class="site-footer">
+      <a id="footer-email" href="#">Email</a>
+      <a href="https://www.linkedin.com/in/jeroenjillissen/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://bsky.app/profile/jillissen.com" target="_blank" rel="noopener">Bluesky</a>
+    </footer>
+
   </div>
 
   <script>
     (function() {
       var u = 'jeroen';
       var d = 'jillissen.com';
-      document.getElementById('nav-email').href = 'mailto:' + u + '@' + d;
+      var href = 'mailto:' + u + '@' + d;
+      document.getElementById('nav-email').href = href;
+      document.getElementById('footer-email').href = href;
     })();
   </script>
 </body>

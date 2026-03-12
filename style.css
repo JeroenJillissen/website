@@ -62,13 +62,11 @@ nav a {
   transition: color 0.15s;
 }
 
-nav a:hover {
-  color: var(--text);
-}
+nav a:hover { color: var(--text); }
+nav a.active { color: var(--text); }
 
-nav a.active {
-  color: var(--text);
-}
+.nav-break { display: none; }
+.nav-contact { display: none; }
 
 @media (min-width: 900px) {
   nav {
@@ -81,15 +79,51 @@ nav a.active {
     padding: 0;
     z-index: 100;
   }
+
+  .nav-break {
+    display: block;
+    height: 48px;
+  }
+
+  .nav-contact {
+    display: block;
+  }
 }
 
-/* ── Homepage vertical centering ── */
+/* ── Mobile contact footer ── */
 
-body.home {
-  min-height: 100%;
+.site-footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 20px;
+  padding: 32px 0 48px;
+}
+
+.site-footer a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+
+.site-footer a:hover { color: var(--text); }
+
+@media (min-width: 900px) {
+  .site-footer { display: none; }
+}
+
+/* ── Homepage vertical centering (desktop only) ── */
+
+body.home { min-height: 100%; }
+
+@media (min-width: 900px) {
+  body.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* ── Heading color spans ── */
