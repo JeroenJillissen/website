@@ -53,17 +53,17 @@ nav {
 }
 
 nav a {
-  font-size: 0.875rem;
-  font-weight: 500;
-  font-family: 'Red Hat Display', sans-serif;
-  color: var(--muted);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #888888;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   transition: color 0.15s;
 }
 
 nav a:hover { color: var(--text); }
-nav a.active { color: var(--text); }
+nav a.active { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
 
 .nav-break { display: none; }
 .nav-contact { display: none; }
@@ -98,22 +98,22 @@ nav a.active { color: var(--text); }
 }
 
 .site-footer a {
-  font-size: 0.875rem;
-  font-weight: 500;
-  font-family: 'Red Hat Display', sans-serif;
-  color: var(--muted);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #888888;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   transition: color 0.15s;
 }
 
 .site-footer a:hover { color: var(--text); }
 
 .footer-sep {
-  font-size: 0.875rem;
-  font-family: 'Red Hat Display', sans-serif;
-  color: var(--muted);
-  letter-spacing: 0.02em;
+  font-size: 20px;
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #888888;
+  letter-spacing: 0;
 }
 
 @media (min-width: 1100px) {
