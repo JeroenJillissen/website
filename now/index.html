@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Now – Jeroen Jillissen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&family=EB+Garamond:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="home">
+  <div class="page">
+
+    <nav>
+      <a href="../">About</a>
+      <a href="../now/" class="active">Now</a>
+      <span class="nav-break"></span>
+      <a class="nav-contact" id="nav-email" href="#">Email</a>
+      <a class="nav-contact" href="https://www.linkedin.com/in/jeroenjillissen/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="nav-contact" href="https://bsky.app/profile/jillissen.com" target="_blank" rel="noopener">Bluesky</a>
+    </nav>
+
+    <div class="page-header">
+      <h1><span class="h1-name">Jeroen Jillissen</span> <span class="h1-sub">– What I'm doing now</span></h1>
+    </div>
+
+    <section class="now-body">
+      <p class="page-intro">Here's an overview of what I'm currently up to.</p>
+      <ul class="now-list">
+        <li>Designing the next generation of AI agents at <a href="https://relay.app" target="_blank" rel="noopener" class="link-relay">Relay.app</a>.</li>
+        <li>Training for the Amstel Gold Tour race in April.</li>
+        <li>Trying to beat Elden Ring on PS5.</li>
+        <li>Experimenting with vibe coding.</li>
+      </ul>
+
+      <p class="now-meta">
+        Last updated on March 12, 2026.<br>This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener">/now page</a>, part of Derek Sivers' <a href="https://nownownow.com" target="_blank" rel="noopener">Nownownow</a> project.
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <a id="footer-email" href="#">Email</a>
+      <a href="https://www.linkedin.com/in/jeroenjillissen/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://bsky.app/profile/jillissen.com" target="_blank" rel="noopener">Bluesky</a>
+    </footer>
+
+  </div>
+
+  <script>
+    (function() {
+      var u = 'jeroen';
+      var d = 'jillissen.com';
+      var href = 'mailto:' + u + '@' + d;
+      document.getElementById('nav-email').href = href;
+      document.getElementById('footer-email').href = href;
+    })();
+  </script>
+</body>
+</html>
