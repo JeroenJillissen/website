@@ -4,6 +4,32 @@
   padding: 0;
 }
 
+/* ── Skip link ── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  padding: 8px 16px;
+  background: var(--text);
+  color: var(--bg);
+  font-family: 'Alegreya', serif;
+  font-size: 1rem;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 0 0 4px 4px;
+}
+
+.skip-link:focus { top: 0; }
+
+/* ── Focus styles ── */
+
+:focus-visible {
+  outline: 2px solid #E73E2F;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 :root {
   --bg: #F2F2F2;
   --text: #1a1a1a;
