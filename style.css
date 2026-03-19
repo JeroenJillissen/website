@@ -8,8 +8,8 @@
 
 .skip-link {
   position: absolute;
-  top: -100%;
-  left: 16px;
+  left: -9999px;
+  top: 8px;
   padding: 8px 16px;
   background: var(--text);
   color: var(--bg);
@@ -17,10 +17,10 @@
   font-size: 1rem;
   text-decoration: none;
   z-index: 9999;
-  border-radius: 0 0 4px 4px;
+  border-radius: 4px;
 }
 
-.skip-link:focus { top: 0; }
+.skip-link:focus { left: 16px; }
 
 /* ── Focus styles ── */
 
