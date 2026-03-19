@@ -1,0 +1,16 @@
+# Jeroen Jillissen
+
+> Principal designer at Relay.app, where we help people build AI agents. Former Director of UX for Google Workspace and Android at Google.
+
+Jeroen Jillissen is a design leader with deep experience in AI-assisted product design. At Google, his teams built some of the first AI-assisted features to solve user problems — including Smart Compose, Smart Reply, and Gmail's tabbed inbox — years before AI became a mainstream term. As Director of UX for Android, he led design across Android 12, 13, and 14 and the Pixel line. He is currently a principal designer at Relay.app, a platform for building AI agents to automate workflows.
+
+## Pages
+
+- [About](https://jeroenjillissen.com/): Who Jeroen is, his background, and his work.
+- [Now](https://jeroenjillissen.com/now/): What he is currently working on and focused on.
+
+## Contact
+
+- Email: jeroen@jillissen.com
+- LinkedIn: https://www.linkedin.com/in/jeroenjillissen/
+- Bluesky: https://bsky.app/profile/jillissen.com
