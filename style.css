@@ -83,12 +83,17 @@ nav {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Alegreya', serif;
-  color: #666666;
   text-decoration: none;
-  transition: color 0.15s;
+  background: linear-gradient(to right, #E73E2F 50%, #666666 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: background-position 0.2s ease;
 }
 
-.nav-name:hover { color: var(--muted); }
+.nav-name:hover { background-position: left; }
 
 .nav-links {
   display: flex;
@@ -100,13 +105,21 @@ nav a {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Alegreya', serif;
-  color: #666666;
   text-decoration: none;
-  transition: color 0.15s;
 }
 
-nav a:hover { color: var(--text); }
-nav a.active { color: #E73E2F; }
+.nav-links a {
+  background: linear-gradient(to right, #E73E2F 50%, #666666 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: background-position 0.2s ease;
+}
+
+.nav-links a:hover { background-position: left; }
+.nav-links a.active { background-position: left; }
 
 .nav-break { display: none; }
 .nav-contact { display: none; }
@@ -357,7 +370,7 @@ footer a:hover {
 /* ── Post ── */
 
 .post {
-  padding: 80px 0 96px;
+  padding: 96px 0 96px;
 }
 
 .post-meta {
@@ -446,10 +459,6 @@ footer a:hover {
 /* ── Responsive ── */
 
 @media (max-width: 520px) {
-  .intro {
-    padding: 32px 0;
-  }
-
   .notes-list li {
     flex-direction: column;
     gap: 4px;
