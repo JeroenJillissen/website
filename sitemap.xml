@@ -10,4 +10,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://jeroenjillissen.com/notes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeroenjillissen.com/notes/building-a-place-thats-mine/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
