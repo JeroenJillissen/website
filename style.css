@@ -475,11 +475,7 @@ footer a:hover {
 /* ── Responsive ── */
 
 @media (max-width: 520px) {
-  .intro {
-    padding: 32px 0;
-  }
-
-.page-header {
+  .page-header {
     padding: 56px 0 32px;
   }
 }
