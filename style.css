@@ -251,6 +251,13 @@ nav a {
 
 /* ── Notes list ── */
 
+.notes-heading {
+  font-family: 'Alegreya', serif;
+  font-size: 24px;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
 .notes-year {
   margin-bottom: 56px;
 }
@@ -263,14 +270,14 @@ nav a {
 }
 
 .notes-year-label {
-  font-family: 'Satoshi', sans-serif;
-  font-size: 18px;
-  color: var(--text);
+  font-family: 'Alegreya', serif;
+  font-size: 22px;
+  color: var(--muted);
 }
 
 .notes-month-label {
-  font-family: 'Satoshi', sans-serif;
-  font-size: 18px;
+  font-family: 'Alegreya', serif;
+  font-size: 22px;
   color: var(--muted);
 }
 
@@ -283,19 +290,27 @@ nav a {
   display: flex;
   align-items: baseline;
   padding: 9px 0;
+  position: relative;
 }
 
 .notes-list a {
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 22px;
-  color: var(--text);
+  color: #666666;
   text-decoration: none;
   transition: color 0.15s;
   flex-shrink: 0;
 }
 
-.notes-list a:hover {
-  color: var(--muted);
+.notes-list a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.notes-list li:hover a,
+.notes-list li:hover .note-day {
+  color: #E73E2F;
 }
 
 .note-leader {
@@ -306,9 +321,9 @@ nav a {
 }
 
 .note-day {
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 22px;
-  color: var(--muted);
+  color: #666666;
   flex-shrink: 0;
 }
 
@@ -377,7 +392,8 @@ footer a:hover {
   font-size: 0.875rem;
   font-family: 'Red Hat Display', sans-serif;
   color: var(--muted);
-  margin-bottom: 24px;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 .post h1 {
@@ -391,7 +407,7 @@ footer a:hover {
 }
 
 .post-body p {
-  font-size: 21px;
+  font-size: 22px;
   color: #666666;
   line-height: 32px;
 }
@@ -406,7 +422,7 @@ footer a:hover {
 }
 
 .post-body ul li {
-  font-size: 21px;
+  font-size: 22px;
   color: #666666;
   line-height: 1.6;
   margin-bottom: 8px;
@@ -459,6 +475,10 @@ footer a:hover {
 /* ── Responsive ── */
 
 @media (max-width: 520px) {
+  .intro {
+    padding: 32px 0;
+  }
+
   .notes-list li {
     flex-direction: column;
     gap: 4px;

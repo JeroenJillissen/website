@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeroen Jillissen – Notes</title>
+    <link>https://jeroenjillissen.com/notes/</link>
+    <description>Notes, thoughts, and the occasional longer piece. On design, AI, and other tangents.</description>
+    <language>en</language>
+    <atom:link href="https://jeroenjillissen.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Building a place that's mine</title>
+      <link>https://jeroenjillissen.com/notes/building-a-place-thats-mine/</link>
+      <guid>https://jeroenjillissen.com/notes/building-a-place-thats-mine/</guid>
+      <pubDate>Sat, 22 Mar 2026 00:00:00 +0000</pubDate>
+      <description>I'm building a personal website in 2026. That probably sounds more nostalgic than it is.</description>
+    </item>
+
+  </channel>
+</rss>
