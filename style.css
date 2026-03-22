@@ -479,12 +479,7 @@ footer a:hover {
     padding: 32px 0;
   }
 
-  .notes-list li {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .page-header {
+.page-header {
     padding: 56px 0 32px;
   }
 }
