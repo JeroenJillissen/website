@@ -448,15 +448,6 @@ footer a:hover {
   color: var(--text);
 }
 
-.post-body a {
-  color: var(--text);
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-.post-body a:hover {
-  color: var(--muted);
-}
 
 .post-back {
   display: inline-block;
